@@ -16,7 +16,7 @@
 <body class="min-h-screen flex flex-col bg-base-200 font-sans">
     <nav class="navbar bg-base-100">
         <div class="navbar-start">
-            <a href="/" class="btn btn-ghost text-xl">🐦 HomePage Adhika</a>
+            <a href="/" class="btn btn-ghost text-xl">🐦 HomePage</a>
         </div>
         <div class="navbar-end gap-2">
             <a href="{{route('login')}}" class="btn btn-ghost btn-sm">Sign In</a>
@@ -29,7 +29,7 @@
             <div class="card bg-base-100 shadow mt-8">
                 <div class="card-body">
                     <div>
-                        <h1 class="text-3xl font-bold">Welcome to HomePage!</h1>
+                        <h1 class="text-3xl font-bold">Welcome to HomePage Adhika!</h1>
                         <p class="mt-4 text-base-content/60">This is your brand new Laravel application. Time to make it
                             sing (or chirp)!</p>
                     </div>
