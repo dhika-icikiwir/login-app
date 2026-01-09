@@ -1,17 +1,5 @@
+<x-layout title="HomePage Adhika">
 
-<!DOCTYPE html>
-<html lang="en" data-theme="lofi">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chirper - Home</title>
-    <link rel="preconnect" href="<https://fonts.bunny.net>">
-    <link href="https://fonts.bunny.net/css?family=instrument-sans:400,500,600,700" rel="stylesheet" />
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
-</head>
 
 <body class="min-h-screen flex flex-col bg-base-200 font-sans">
     <nav class="navbar bg-base-100">
@@ -32,6 +20,8 @@
                         <h1 class="text-3xl font-bold">Welcome to HomePage Adhika!</h1>
                         <p class="mt-4 text-base-content/60">This is your brand new Laravel application. Time to make it
                             sing (or chirp)!</p>
+                            {!! QrCode::size(200)->generate(url('/login')) !!}
+
                     </div>
                 </div>
             </div>
@@ -44,5 +34,4 @@
         </div>
     </footer>
 </body>
-
-</html> 
+</x-layout>
